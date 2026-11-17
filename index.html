@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZNP GAMING | Stream Outline & Promotional Strategy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- PDF.js for 1-Click Exact Image Extraction from Tle.pdf -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <style>
+    :root {
+      --bg-primary: #07050c;
+      --bg-secondary: #110b1d;
+      --bg-card: #160f26;
+      --purple-main: #9333ea;
+      --purple-bright: #a855f7;
+      --purple-neon: #c084fc;
+      --purple-glow: rgba(168, 85, 247, 0.45);
+      --text-white: #ffffff;
+      --text-muted: #cbd5e1;
+      --border-purple: rgba(168, 85, 247, 0.35);
+      --success: #22c55e;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      background-image: 
+        radial-gradient(circle at 15% 20%, rgba(147, 51, 234, 0.16) 0%, transparent 40%),
+        radial-gradient(circle at 85% 75%, rgba(192, 132, 252, 0.12) 0%, transparent 40%);
+      color: var(--text-white);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Auto-Extractor Control Banner (Hidden automatically when exported/saved) */
+    .extractor-bar {
+      background: linear-gradient(90deg, #2e1065, #581c87, #3b0764);
+      border-bottom: 2px solid var(--purple-neon);
+      padding: 0.9rem 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      box-shadow: 0 4px 25px rgba(168, 85, 247, 0.4);
+    }
+
+    .extractor-info {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .extractor-info strong {
+      font-family: 'Orbitron', sans-serif;
+      color: var(--purple-neon);
+      letter-spacing: 0.5px;
+    }
+
+    .extractor-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      align-items: center;
+    }
+
+    .btn-action {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 0.6rem 1.1rem;
+      border-radius: 8px;
+      border: 1px solid #fff;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn-pdf {
+      background: var(--purple-main);
+      color: #fff;
+      box-shadow: 0 0 15px rgba(168, 85, 247, 0.6);
+    }
+
+    .btn-pdf:hover {
+      background: var(--purple-bright);
+      transform: translateY(-1px);
+    }
+
+    .btn-save-html {
+      background: var(--success);
+      color: #052e16;
+      border-color: #86efac;
+      display: none;
+    }
+
+    .btn-save-html:hover {
+      filter: brightness(1.1);
+      transform: translateY(-1px);
+    }
+
+    #extract-status {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #fde047;
+    }
+
+    /* Sticky Navigation */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(7, 5, 12, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-purple);
+      padding: 0.85rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .brand-title {
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 900;
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: var(--text-white);
+      text-decoration: none;
+    }
+
+    .brand-title span {
+      color: var(--purple-bright);
+      text-shadow: 0 0 12px var(--purple-glow);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0.4rem 0.75rem;
+      border-radius: 6px;
+      transition: all 0.25s ease;
+    }
+
+    nav a:hover {
+      color: var(--text-white);
+      background: rgba(168, 85, 247, 0.2);
+      box-shadow: 0 0 12px rgba(168, 85, 247, 0.3);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 4.5rem 1.5rem 3.5rem;
+      text-align: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .badge-codm {
+      display: inline-block;
+      background: rgba(147, 51, 234, 0.2);
+      border: 1px solid var(--purple-bright);
+      color: var(--purple-neon);
+      font-family: 'Orbitron', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.35rem 1rem;
+      border-radius: 50px;
+      letter-spacing: 2px;
+      margin-bottom: 1.2rem;
+      text-transform: uppercase;
+      box-shadow: 0 0 15px rgba(147, 51, 234, 0.3);
+    }
+
+    .hero h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(2.4rem, 6vw, 4.5rem);
+      font-weight: 900;
+      letter-spacing: 3px;
+      line-height: 1.1;
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      text-shadow: 0 0 25px rgba(168, 85, 247, 0.6);
+    }
+
+    .hero h1 span {
+      background: linear-gradient(90deg, #c084fc, #9333ea);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero h2 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: clamp(1.2rem, 3vw, 1.75rem);
+      color: var(--text-muted);
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .motto {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.05rem;
+      color: var(--purple-neon);
+      letter-spacing: 1.5px;
+    }
+
+    /* Container & Sections */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      margin-bottom: 4.5rem;
+      scroll-margin-top: 85px;
+    }
+
+    .section-header {
+      margin-bottom: 2rem;
+      border-left: 5px solid var(--purple-bright);
+      padding-left: 1rem;
+    }
+
+    .section-header h3 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      margin-top: 0.25rem;
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-purple);
+      border-radius: 12px;
+      padding: 1.75rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 35px rgba(147, 51, 234, 0.22);
+      border-color: var(--purple-bright);
+    }
+
+    .card h4 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.2rem;
+      color: var(--purple-neon);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .info-list {
+      list-style: none;
+    }
+
+    .info-list li {
+      padding: 0.55rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .info-list li:last-child {
+      border-bottom: none;
+    }
+
+    .info-label {
+      font-weight: 700;
+      color: var(--purple-neon);
+      white-space: nowrap;
+    }
+
+    .goals-list {
+      list-style: none;
+      counter-reset: goal-counter;
+    }
+
+    .goals-list li {
+      counter-increment: goal-counter;
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.6rem 0;
+      font-size: 0.95rem;
+    }
+
+    .goals-list li::before {
+      content: counter(goal-counter);
+      background: linear-gradient(135deg, var(--purple-main), #6b21a8);
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 800;
+      font-size: 0.8rem;
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 0 10px var(--purple-glow);
+    }
+
+    /* Visual Assets Grid */
+    .asset-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .asset-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-purple);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .asset-preview {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #050308;
+      overflow: hidden;
+      border-bottom: 2px solid var(--purple-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .asset-preview img.pdf-exact-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #050308;
+      display: block;
+    }
+
+    .asset-body {
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .asset-body h4 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.05rem;
+      color: #fff;
+      margin-bottom: 0.4rem;
+    }
+
+    .asset-body p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .asset-actions {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .btn-upload {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      background: rgba(168, 85, 247, 0.18);
+      border: 1px solid var(--purple-bright);
+      color: var(--text-white);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-upload:hover {
+      background: var(--purple-main);
+    }
+
+    /* Placeholder before PDF is loaded */
+    .placeholder-box {
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--text-muted);
+      font-family: 'Rajdhani', sans-serif;
+    }
+
+    .placeholder-box span {
+      display: inline-block;
+      font-family: 'Orbitron', sans-serif;
+      color: var(--purple-neon);
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    /* Schedule Table */
+    .table-wrapper {
+      overflow-x: auto;
+      border-radius: 12px;
+      border: 1px solid var(--border-purple);
+      background: var(--bg-card);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th, td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    th {
+      background: rgba(147, 51, 234, 0.25);
+      font-family: 'Orbitron', sans-serif;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--purple-neon);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: rgba(168, 85, 247, 0.08);
+    }
+
+    .day-badge {
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      color: #fff;
+      background: rgba(147, 51, 234, 0.35);
+      border: 1px solid var(--purple-bright);
+      padding: 0.25rem 0.7rem;
+      border-radius: 6px;
+      display: inline-block;
+      font-size: 0.8rem;
+    }
+
+    /* Lightbox Modal for Fullscreen Image Viewing */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.92);
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      cursor: zoom-out;
+    }
+
+    .lightbox.open {
+      display: flex;
+    }
+
+    .lightbox img {
+      max-width: 95%;
+      max-height: 90vh;
+      border: 2px solid var(--purple-bright);
+      border-radius: 10px;
+      box-shadow: 0 0 40px rgba(168, 85, 247, 0.6);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 3.5rem 1.5rem;
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border-purple);
+      margin-top: 3rem;
+    }
+
+    footer h3 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-white);
+    }
+
+    footer p {
+      font-family: 'Orbitron', sans-serif;
+      color: var(--purple-neon);
+      font-size: 0.95rem;
+      letter-spacing: 1.5px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 0.75rem 1rem;
+      }
+      .asset-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar: 1-Click Exact PDF Picture Extractor & Single-File Saver -->
+  <div class="extractor-bar" id="extractor-bar">
+    <div class="extractor-info">
+      <span style="font-size: 1.5rem;">⚡</span>
+      <div>
+        <strong>EXACT PDF PICTURE LOADER:</strong> Piliin ang iyong <code>Tle.pdf</code> para awtomatikong ma-crop at mailagay ang eksaktong 9 na pictures mula sa PDF mo!
+      </div>
+    </div>
+    <div class="extractor-actions">
+      <span id="extract-status"></span>
+      <label class="btn-action btn-pdf">
+        📄 Piliin ang Tle.pdf (Auto-Extract All 9 Pics)
+        <input type="file" id="pdf-upload" accept="application/pdf" hidden onchange="extractAllImagesFromPDF(event)" />
+      </label>
+      <button class="btn-action btn-save-html" id="btn-save-embedded" onclick="downloadSelfContainedHTML()">
+        💾 Save Complete Single-File HTML (Embedded Pics)
+      </button>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation Header -->
+  <header>
+    <a href="#" class="brand-title">🎮 ZNP <span>GAMING</span></a>
+    <nav>
+      <ul>
+        <li><a href="#concept">Concept</a></li>
+        <li><a href="#content">Content</a></li>
+        <li><a href="#branding">Visual Assets (9 Pics)</a></li>
+        <li><a href="#layout">Stream Layout</a></li>
+        <li><a href="#promotion">Promotion</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <div class="hero">
+    <div class="badge-codm">Call of Duty: Mobile (CODM)</div>
+    <h1>ZNP <span>GAMING</span></h1>
+    <h2>Stream Outline &amp; Promotional Strategy</h2>
+    <p class="motto">“Level Up. Play Together. Enjoy the Game.”</p>
+  </div>
+
+  <div class="container">
+
+    <!-- 1. STREAMING CONCEPT -->
+    <section id="concept">
+      <div class="section-header">
+        <h3>Streaming Concept</h3>
+        <p>Channel identity, core stream information, and primary objectives.</p>
+      </div>
+
+      <div class="card" style="margin-bottom: 1.5rem;">
+        <h4>About My Stream</h4>
+        <p>
+          Welcome to <strong>ZNP Gaming</strong>! This streaming channel focuses on <strong>Call of Duty Mobile (CODM)</strong>, featuring exciting gameplay, multiplayer matches, ranked games, and gaming challenges. My goal is to entertain viewers, interact with other gaming enthusiasts, and create a friendly gaming community where everyone can enjoy the experience.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h4>Stream Information</h4>
+          <ul class="info-list">
+            <li><span class="info-label">Stream Name:</span> <span>ZNP Gaming</span></li>
+            <li><span class="info-label">Game:</span> <span>Call of Duty Mobile (CODM)</span></li>
+            <li><span class="info-label">Genre:</span> <span>Mobile Gaming / First-Person Shooter (FPS)</span></li>
+            <li><span class="info-label">Stream Type:</span> <span>Live Gameplay and Gaming Entertainment</span></li>
+            <li><span class="info-label">Personality:</span> <span>Friendly, competitive, energetic, and entertaining</span></li>
+            <li><span class="info-label">Target Audience:</span> <span>CODM players, mobile gamers, and gaming enthusiasts</span></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>Streaming Goals</h4>
+          <ol class="goals-list">
+            <li>Entertain viewers through exciting CODM gameplay.</li>
+            <li>Encourage audience participation and interaction.</li>
+            <li>Share interesting gameplay moments and highlights.</li>
+            <li>Build a welcoming gaming community.</li>
+            <li>Improve my gaming and streaming skills.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. MY STREAM CONTENT -->
+    <section id="content">
+      <div class="section-header">
+        <h3>My Stream Content</h3>
+        <p>ZNP Gaming will focus on entertaining CODM gameplay and audience engagement.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h4>⚔️ Multiplayer Matches</h4>
+          <p>Show exciting multiplayer gameplay and different match experiences.</p>
+        </div>
+        <div class="card">
+          <h4>🏆 Ranked Gameplay</h4>
+          <p>Share competitive matches and progress through ranked games.</p>
+        </div>
+        <div class="card">
+          <h4>🎯 Gaming Challenges</h4>
+          <p>Try different gaming challenges to make the stream more entertaining.</p>
+        </div>
+        <div class="card">
+          <h4>🔥 Gameplay Highlights</h4>
+          <p>Share interesting moments, achievements, and memorable matches.</p>
+        </div>
+        <div class="card">
+          <h4>💬 Audience Interaction</h4>
+          <p>Communicate with viewers through live chat and encourage participation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. STREAM BRANDING AND VISUAL ASSETS -->
+    <section id="branding">
+      <div class="section-header">
+        <h3>Stream Branding &amp; Visual Assets</h3>
+        <p>I created custom graphics using Canva to establish a consistent visual identity for ZNP Gaming. The designs use black backgrounds, purple and lavender accents, and bold white typography to create a recognizable gaming theme.</p>
+      </div>
+
+      <div class="asset-grid">
+
+        <!-- 1. ZNP GAMING LOGO -->
+        <div class="asset-card">
+          <div class="asset-preview" id="slot-logo" onclick="openLightbox(this)">
+            <div class="placeholder-box">
+              <span>1. ZNP GAMING LOGO</span><br>
+              I-click ang "Piliin ang Tle.pdf" sa taas o mag-upload ng pic sa baba para lumabas ang eksaktong picture mula sa PDF Page 3.
+            </div>
+          </div>
+          <div class="asset-body">
+            <div>
+              <h4>1. ZNP Gaming Logo</h4>
+              <p>The logo represents my gaming channel and helps establish its identity.</p>
+            </div>
+            <div class="asset-actions">
+              <label class="btn-upload">📁 Upload Pic <input type="file" accept="image/*" hidden onchange="manualImageUpload(event, 'slot-logo')"></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. STARTING SOON SCREEN -->
+        <div class="asset-card">
+          <div class="asset-preview" id="slot-starting" onclick="openLightbox(this)">
+            <div class="placeholder-box">
+              <span>2. STARTING SOON SCREEN</span><br>
+              I-click ang "Piliin ang Tle.pdf" sa taas para lumabas ang eksaktong picture mula sa PDF Page 3.
+            </div>
+          </div>
+          <div class="asset-body">
+            <div>
+              <h4>2. Starting Soon Screen</h4>
+              <p>This screen appears before the livestream begins to inform viewers that the stream will start shortly.</p>
+            </div>
+            <div class="asset-actions">
+              <label class="btn-upload">📁 Upload Pic <input type="file" accept="image/*" hidden onchange="manualImageUpload(event, 'slot-starting')"></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. OFFLINE BANNER -->
+        <div class="asset-card">
+          <div class="asset-preview" id="slot-offline" onclick="openLightbox(this)">
+            <div class="placeholder-box">
+              <span>3. OFFLINE BANNER</span><br>
+              I-click ang "Piliin ang Tle.pdf" sa taas para lumabas ang eksaktong picture mula sa PDF Page 4.
+            </div>
+          </div>
+          <div class="asset-body">
+            <div>
+              <h4>3. Offline Banner</h4>
+              <p>This banner informs viewers when the livestream is not currently active.</p>
+            </div>
+            <div class="asset-actions">
+              <label class="btn-upload">📁 Upload Pic <input type="file" accept="image/*" hidden onchange="manualImageUpload(event, 'slot-offline')"></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. GAMEPLAY OVERLAY -->
+        <div class="asset-card">
+          <div class="asset-preview" id="slot-overlay" onclick="openLightbox(this)">
+            <div class="placeholder-box">
+              <span>4. GAMEPLAY OVERLAY</span><br>
+              I-click ang "Piliin ang Tle.pdf" sa taas para lumabas ang eksaktong picture mula sa PDF Page 5.
+            </div>
+          </div>
+          <div class="asset-body">
+            <div>
+              <h4>4. Gameplay Overlay</h4>
+              <p>The overlay frames my CODM gameplay and provides spaces for stream information, notifications, and other visual elements.</p>
+            </div>
+            <div class="asset-actions">
+              <label class="btn-upload">📁 Upload Pic <input type="file" accept="image/*" hidden onchange="manualImageUpload(event, 'slot-overlay')"></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. ENDING SOON SCREEN -->
+        <div class="asset-card">
+          <div class="asset-preview" id="slot-ending" onclick="openLightbox(this)">
+            <div class="placeholder-box">
+              <span>5. ENDING SOON SCREEN</span><br>
+              I-click ang "Piliin ang Tle.pdf" sa taas para lumabas ang eksaktong picture mula sa PDF Page 5.
+            </div>
+          </div>
+          <div class="asset-body">
+            <div>
+              <h4>5. Ending Soon Screen</h4>
+              <p>This screen appears when the livestream is about to end. It thanks viewers for watching and reminds them to follow the channel.</p>
+            </div>
+            <div class="asset-actions">
+              <label class="btn-upload">📁 Upload Pic <input type="file" accept="image/*" hidden onchange="manualImageUpload(event, 'slot-ending')"></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. NOTIFICATION ALERT -->
+        <div class="asset-card">
+          <div class="asset-preview" id="slot-notification" onclick="openLightbox(this)">
+            <div class="placeholder-box">
+              <span>6. NOTIFICATION ALERT</span><br>
+              I-click ang "Piliin ang Tle.pdf" sa taas para lumabas ang eksaktong picture mula sa PDF Page 6.
+            </div>
+          </div>
+          <div class="asset-body">
+            <div>
+              <h4>6. Notification Alert</h4>
+              <p>This design represents a notification that appears when someone follows my gaming channel.</p>
+            </div>
+            <div class="asset-actions">
+              <label class="btn-upload">📁 Upload Pic <input type="file" accept="image/*" hidden onchange="manualImageUpload(event, 'slot-notification')"></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. SUBSCRIBE BUTTON -->
+        <div class="asset-card">
+          <div class="asset-preview" id="slot-subscribe" onclick="openLightbox(this)">
+            <div class="placeholder-box">
+              <span>7. SUBSCRIBE BUTTON</span><br>
+              I-click ang "Piliin ang Tle.pdf" sa taas para lumabas ang eksaktong picture mula sa PDF Page 7.
+            </div>
+          </div>
+          <div class="asset-body">
+            <div>
+              <h4>7. Subscribe Button</h4>
+              <p>This graphic encourages viewers to subscribe, like, and share my gaming content.</p>
+            </div>
+            <div class="asset-actions">
+              <label class="btn-upload">📁 Upload Pic <input type="file" accept="image/*" hidden onchange="manualImageUpload(event, 'slot-subscribe')"></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. STREAM NAVIGATION GRAPHIC -->
+        <div class="asset-card">
+          <div class="asset-preview" id="slot-navigation" onclick="openLightbox(this)">
+            <div class="placeholder-box">
+              <span>8. STREAM NAVIGATION GRAPHIC</span><br>
+              I-click ang "Piliin ang Tle.pdf" sa taas para lumabas ang eksaktong picture mula sa PDF Page 7.
+            </div>
+          </div>
+          <div class="asset-body">
+            <div>
+              <h4>8. Stream Navigation Graphic</h4>
+              <p>This graphic organizes important sections such as About Me, TikTok, Facebook, YouTube, Schedule, and Notifications.</p>
+            </div>
+            <div class="asset-actions">
+              <label class="btn-upload">📁 Upload Pic <input type="file" accept="image/*" hidden onchange="manualImageUpload(event, 'slot-navigation')"></label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. STREAM LAYOUT -->
+    <section id="layout">
+      <div class="section-header">
+        <h3>Stream Layout</h3>
+        <p>My stream layout is designed to make the gameplay clear and enjoyable for viewers.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h4>Layout Elements</h4>
+          <ul class="info-list">
+            <li><span class="info-label">Gameplay Area:</span> <span>The main screen where viewers can watch CODM matches.</span></li>
+            <li><span class="info-label">Stream Logo:</span> <span>Displays the identity of ZNP Gaming.</span></li>
+            <li><span class="info-label">Notification Area:</span> <span>Displays important stream alerts.</span></li>
+            <li><span class="info-label">Information Panels:</span> <span>Provide space for follower, donation, and membership information where supported.</span></li>
+            <li><span class="info-label">Social Media Section:</span> <span>Displays my social media platforms.</span></li>
+            <li><span class="info-label">Subscribe Section:</span> <span>Encourages viewers to support the channel.</span></li>
+          </ul>
+          <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.92rem;">
+            The layout keeps gameplay as the main focus while maintaining a consistent gaming appearance.
+          </p>
+        </div>
+
+        <!-- 9. STREAM LAYOUT PICTURE -->
+        <div class="asset-card">
+          <div class="asset-preview" id="slot-layout" onclick="openLightbox(this)">
+            <div class="placeholder-box">
+              <span>9. STREAM LAYOUT (WITH CHAT BOX)</span><br>
+              I-click ang "Piliin ang Tle.pdf" sa taas para lumabas ang eksaktong picture mula sa PDF Page 8.
+            </div>
+          </div>
+          <div class="asset-body">
+            <div>
+              <h4>Complete Stream Layout</h4>
+              <p>Displays the Gameplay Area, LIVE badge, Chat box, Information Panels, Social Media, and Subscribe section.</p>
+            </div>
+            <div class="asset-actions">
+              <label class="btn-upload">📁 Upload Pic <input type="file" accept="image/*" hidden onchange="manualImageUpload(event, 'slot-layout')"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PROMOTIONAL STRATEGY -->
+    <section id="promotion">
+      <div class="section-header">
+        <h3>Promotional Strategy</h3>
+        <p>My promotional strategy focuses on reaching CODM players and gaming enthusiasts through different online platforms.</p>
+      </div>
+
+      <div class="grid-2" style="margin-bottom: 1.5rem;">
+        <div class="card">
+          <h4>1. 🎵 TikTok</h4>
+          <p>I will share short gameplay clips, exciting moments, and interesting highlights to attract potential viewers.</p>
+        </div>
+        <div class="card">
+          <h4>2. 📘 Facebook</h4>
+          <p>I will post livestream announcements, updates, and streaming schedules to inform people about my gaming content.</p>
+        </div>
+        <div class="card">
+          <h4>3. ▶️ YouTube</h4>
+          <p>I will upload gameplay highlights, recorded matches, and entertaining gaming moments.</p>
+        </div>
+        <div class="card">
+          <h4>4. 🌐 Gaming Communities</h4>
+          <p>I will connect with other CODM players, participate in gaming discussions, and share updates about my stream when appropriate.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4>Promotional Goal</h4>
+        <p>My goal is to increase awareness of <strong>ZNP Gaming</strong>, attract interested viewers, encourage audience engagement, and gradually build a friendly gaming community.</p>
+      </div>
+    </section>
+
+    <!-- 6. STREAMING SCHEDULE -->
+    <section id="schedule">
+      <div class="section-header">
+        <h3>Streaming Schedule</h3>
+        <p>The following is my proposed streaming schedule. It may change depending on my availability.</p>
+      </div>
+
+      <div class="table-wrapper" style="margin-bottom: 1.5rem;">
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Stream Content</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="day-badge">Monday</span></td>
+              <td>Multiplayer Matches</td>
+            </tr>
+            <tr>
+              <td><span class="day-badge">Wednesday</span></td>
+              <td>Ranked Gameplay</td>
+            </tr>
+            <tr>
+              <td><span class="day-badge">Friday</span></td>
+              <td>Gaming Challenges</td>
+            </tr>
+            <tr>
+              <td><span class="day-badge">Saturday</span></td>
+              <td>Audience Interaction and Fun Matches</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h4>What Viewers Can Expect</h4>
+        <p>Viewers can expect entertaining CODM gameplay, exciting matches, gaming challenges, and opportunities to interact during livestreams.</p>
+      </div>
+    </section>
+
+    <!-- 7. CONCLUSION -->
+    <section id="conclusion">
+      <div class="section-header">
+        <h3>Conclusion</h3>
+      </div>
+      <div class="card">
+        <p style="margin-bottom: 1rem;">
+          <strong>ZNP Gaming</strong> is my way of sharing my interest in Call of Duty Mobile through streaming and creative content.
+        </p>
+        <p style="margin-bottom: 1rem;">
+          Through proper planning, custom visual assets, and a promotional strategy, I aim to create an entertaining and welcoming gaming experience.
+        </p>
+        <p>
+          My goal is not only to play games but also to connect with other gaming enthusiasts and build a community that enjoys gaming together.
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div class="lightbox" id="lightbox" onclick="this.classList.remove('open')">
+    <img id="lightbox-img" src="" alt="Full View" />
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <h3>THANK YOU FOR VISITING ZNP GAMING!</h3>
+    <p>LEVEL UP. PLAY TOGETHER. ENJOY THE GAME.</p>
+  </footer>
+
+  <script>
+    // Configure PDF.js worker
+    if (window.pdfjsLib) {
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    }
+
+    /**
+     * Exact normalized crop coordinates [x, y, width, height] (0 to 1)
+     * calibrated directly from the pages of Tle.pdf:
+     * - Page 3: Logo (top), Starting Soon (bottom)
+     * - Page 4: Offline Banner (middle)
+     * - Page 5: Gameplay Overlay (top), Ending Soon (bottom)
+     * - Page 6: Notification Alert (middle)
+     * - Page 7: Subscribe Button (top), Stream Navigation Graphic (bottom)
+     * - Page 8: Annotated Stream Layout with Chat box (middle)
+     */
+    const PDF_IMAGE_MAP = [
+      { slotId: 'slot-logo',         page: 3, crop: [0.115, 0.088, 0.770, 0.312] },
+      { slotId: 'slot-starting',     page: 3, crop: [0.115, 0.520, 0.770, 0.335] },
+      { slotId: 'slot-offline',      page: 4, crop: [0.115, 0.165, 0.770, 0.315] },
+      { slotId: 'slot-overlay',      page: 5, crop: [0.115, 0.088, 0.770, 0.312] },
+      { slotId: 'slot-ending',       page: 5, crop: [0.115, 0.520, 0.770, 0.285] },
+      { slotId: 'slot-notification', page: 6, crop: [0.115, 0.165, 0.770, 0.312] },
+      { slotId: 'slot-subscribe',    page: 7, crop: [0.115, 0.088, 0.770, 0.312] },
+      { slotId: 'slot-navigation',   page: 7, crop: [0.115, 0.520, 0.770, 0.312] },
+      { slotId: 'slot-layout',       page: 8, crop: [0.115, 0.395, 0.770, 0.312] }
+    ];
+
+    // Auto-trim white borders around cropped image
+    function trimWhiteBorders(canvas) {
+      const ctx = canvas.getContext('2d');
+      const { width, height } = canvas;
+      const imgData = ctx.getImageData(0, 0, width, height).data;
+
+      const isWhiteRow = (y) => {
+        for (let x = 0; x < width; x += 4) {
+          const i = (y * width + x) * 4;
+          if (imgData[i] < 240 || imgData[i + 1] < 240 || imgData[i + 2] < 240) return false;
+        }
+        return true;
+      };
+
+      const isWhiteCol = (x) => {
+        for (let y = 0; y < height; y += 4) {
+          const i = (y * width + x) * 4;
+          if (imgData[i] < 240 || imgData[i + 1] < 240 || imgData[i + 2] < 240) return false;
+        }
+        return true;
+      };
+
+      let top = 0, bottom = height - 1, left = 0, right = width - 1;
+      while (top < bottom && isWhiteRow(top)) top++;
+      while (bottom > top && isWhiteRow(bottom)) bottom--;
+      while (left < right && isWhiteCol(left)) left++;
+      while (right > left && isWhiteCol(right)) right--;
+
+      const trimmedW = Math.max(1, right - left + 1);
+      const trimmedH = Math.max(1, bottom - top + 1);
+
+      const out = document.createElement('canvas');
+      out.width = trimmedW;
+      out.height = trimmedH;
+      out.getContext('2d').drawImage(canvas, left, top, trimmedW, trimmedH, 0, 0, trimmedW, trimmedH);
+      return out.toDataURL('image/jpeg', 0.94);
+    }
+
+    async function extractAllImagesFromPDF(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const statusEl = document.getElementById('extract-status');
+      statusEl.textContent = '⏳ Kumukuha ng 9 pictures mula sa PDF...';
+
+      try {
+        const arrayBuffer = await file.arrayBuffer();
+        const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+
+        // Render pages needed
+        const pageCanvases = {};
+        const uniquePages = [...new Set(PDF_IMAGE_MAP.map(item => item.page))];
+
+        for (const pageNum of uniquePages) {
+          if (pageNum <= pdf.numPages) {
+            const page = await pdf.getPage(pageNum);
+            const viewport = page.getViewport({ scale: 2.5 });
+            const canvas = document.createElement('canvas');
+            canvas.width = viewport.width;
+            canvas.height = viewport.height;
+            await page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise;
+            pageCanvases[pageNum] = canvas;
+          }
+        }
+
+        // Crop each of the 9 visual assets
+        for (const item of PDF_IMAGE_MAP) {
+          const srcCanvas = pageCanvases[item.page];
+          if (!srcCanvas) continue;
+
+          const [nx, ny, nw, nh] = item.crop;
+          const sx = Math.floor(nx * srcCanvas.width);
+          const sy = Math.floor(ny * srcCanvas.height);
+          const sw = Math.floor(nw * srcCanvas.width);
+          const sh = Math.floor(nh * srcCanvas.height);
+
+          const cropCanvas = document.createElement('canvas');
+          cropCanvas.width = sw;
+          cropCanvas.height = sh;
+          cropCanvas.getContext('2d').drawImage(srcCanvas, sx, sy, sw, sh, 0, 0, sw, sh);
+
+          const dataUrl = trimWhiteBorders(cropCanvas);
+          setSlotImage(item.slotId, dataUrl);
+        }
+
+        statusEl.textContent = '✅ Nakuha na lahat ng 9 Exact Pictures!';
+        document.getElementById('btn-save-embedded').style.display = 'inline-flex';
+      } catch (err) {
+        console.error(err);
+        statusEl.textContent = '❌ May error sa pagbasa ng PDF. Siguraduhing Tle.pdf ang napili.';
+      }
+    }
+
+    function setSlotImage(slotId, dataUrl) {
+      const slot = document.getElementById(slotId);
+      if (!slot) return;
+      slot.innerHTML = `<img class="pdf-exact-img" src="${dataUrl}" alt="${slotId}" title="Click to view fullscreen" />`;
+    }
+
+    function manualImageUpload(event, slotId) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        setSlotImage(slotId, e.target.result);
+        document.getElementById('btn-save-embedded').style.display = 'inline-flex';
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function openLightbox(slotEl) {
+      const img = slotEl.querySelector('img');
+      if (!img) return;
+      const lb = document.getElementById('lightbox');
+      document.getElementById('lightbox-img').src = img.src;
+      lb.classList.add('open');
+    }
+
+    // Save a 100% standalone single HTML file with all Base64 images permanently embedded
+    function downloadSelfContainedHTML() {
+      const clone = document.documentElement.cloneNode(true);
+      const topBar = clone.querySelector('#extractor-bar');
+      if (topBar) topBar.remove();
+      clone.querySelectorAll('.asset-actions').forEach(el => el.remove());
+
+      const htmlContent = '<!DOCTYPE html>\n' + clone.outerHTML;
+      const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'ZNP_Gaming_Complete_With_Pics.html';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
